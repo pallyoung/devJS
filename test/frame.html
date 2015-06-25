@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>styles</title>
+	<style>
+		#DEVTools{
+			width:100%;
+			height: 100%;
+			font-size: 10px;
+			position: fixed;
+			top:0;
+			left:0;
+		}
+		#DEVTools *{
+			margin: 0;
+			padding: 0;
+			font-size: 10px;
+		}
+		#menu,#toolbar,#Console,#msgShower,#edit{
+			width:100%;
+		}
+
+		#menu,#toolbar{
+			list-style: none;
+		}
+		#menu li,#toolbar li{
+			display: inline-block;
+			height: 2em;
+			line-height:2em;
+			text-align: center;
+			margin: 0 1em;
+		}
+		#menu{
+			background: rgb(222,222,222);
+		}
+		#toolbar{
+			border-bottom: solid 1px rgb(222,222,222)
+		}
+		#Console{
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="DEVTools">
+		<ul id="menu">
+			<li>Console</li>
+		</ul>
+		<ul id="toolbar">
+			<li>Clear</li>
+		</ul>
+		<div id="Console">
+			<div id="msgShower">
+				
+			</div>
+			<textarea id="edit">
+				
+			</textarea>
+		</div>
+	</div>
+</body>
+</html>
